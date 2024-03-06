@@ -1,0 +1,64 @@
+.profile-with-tagline img {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 43px;
+}
+.profile-with-tagline {
+  gap: 10px;
+}
+/* styles.css */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 60%;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+.design-box {
+  padding: 15px;
+  /* margin-bottom: 15px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 265px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.row .col-md-3 {
+  padding: 30px 0;
+  background-color: #e9f0f5;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.row .col-md-9 {
+  padding: 30px 0;
+}
+/* .container-fluid {
+    height: 100vh;
+  } */
+.container-fluid {
+  height: 100vh;
+  background-color: #e9f0f5;
+}
+.container-fluid .row {
+  height: -webkit-fill-available;
+}
