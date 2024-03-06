@@ -5,7 +5,7 @@ import { faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
 
 const ToggleButton = ({ onClick, isToggled }) => {
   return (
-    <button onClick={onClick} className="toggle-button">
+    <button onClick={onClick} className="toggle-button btn btn-primary">
       <FontAwesomeIcon icon={isToggled ? faToggleOn : faToggleOff} />
     </button>
   );

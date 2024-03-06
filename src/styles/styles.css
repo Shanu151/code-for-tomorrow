@@ -14,14 +14,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(10px);
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 20% auto;
+  /* margin: 20% auto; */
   padding: 20px;
   width: 60%;
+  height: min-content;
 }
 
 .close {
@@ -31,7 +34,9 @@
 }
 
 .show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .design-box {
   padding: 15px;
@@ -48,9 +53,15 @@
   padding: 30px 0;
   background-color: #e9f0f5;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .row .col-md-9 {
-  padding: 30px 0;
+  background-color: #e9f0f5;
+  padding: 30px 50px;
+  box-shadow: rgba(50, 0, 0, 0.25) 0px 0px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 0px 0px -18px inset;
 }
 /* .container-fluid {
     height: 100vh;
@@ -61,4 +72,72 @@
 }
 .container-fluid .row {
   height: -webkit-fill-available;
+}
+.row.flex-column .col-12 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.row.flex-wrap .col-4 div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.loadanimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.btn-close {
+  float: inline-end;
+}
+input {
+  border: 1px solid #00000050;
+  width: 100%;
+  background-color: transparent;
+  height: clamp(42px, 3vw, 56px);
+  outline: none;
+  color: #000000de;
+  padding: 0 10px;
+  margin-top: -10px;
+}
+textarea {
+  border: 1px solid #00000050;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  color: #000000de;
+  padding: 0 10px;
+  margin-top: -10px;
+}
+.form-data label {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  text-align: start;
+  position: relative;
+}
+.form-data label p {
+  background-color: #fff;
+  width: fit-content;
+  margin-left: 10px;
+  z-index: 9;
+  padding: 0 8px;
+}
+.form-data label span {
+  position: absolute;
+  right: 10px;
+  background-color: #fff;
+  padding: 0 8px;
+}
+.col-md-9 .row .col-4 div h4 {
+  min-height: 50px;
 }

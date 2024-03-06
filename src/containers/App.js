@@ -82,7 +82,9 @@ const App = () => {
               <div className="text-center design-box">
                 <h3>Have a Feedback?</h3>
                 <div>
-                  <button onClick={openModal}>Open Modal</button>
+                  <button className="btn btn-primary" onClick={openModal}>
+                    Open Modal
+                  </button>
                   <Modal isOpen={isModalOpen} onClose={closeModal} />
                 </div>
               </div>

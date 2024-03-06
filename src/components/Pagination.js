@@ -9,6 +9,7 @@ const Pagination = ({ totalItems, itemsPerPage, activePage, onPageChange }) => {
     <div>
       {pages.map((page) => (
         <button
+          className="btn btn-primary"
           key={page}
           onClick={() => onPageChange(page)}
           disabled={page === activePage}
